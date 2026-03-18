@@ -9,6 +9,20 @@ p{
   background-color: rgb(237, 237, 255);
   padding: 10px;
 }
+
+.piglet{
+  background-color: rgb(197, 135, 255);
+  color: aliceblue;
+  padding: 30px;
+}
+
+.ch{
+  background-color: rgb(255, 163, 163);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+
 h3{
   color: rgb(200, 152, 255);
   background-color: azure;
