@@ -1,4 +1,4 @@
-#dark {
+#Dark {
   background-color: rgb(42, 42, 42);
   color: rgb(255, 255, 255);    border: 3px solid rgb(200, 152, 255);
 
@@ -37,9 +37,15 @@ h2{
   color:rgb(224, 255, 240)
 }
 button{
-    color: rgb(119, 58, 140);
-    background-color: rgb(141, 209, 255);
+  background-color: rgb(182, 201, 255);
+  color: rgb(255, 255, 255);
+  border-width: 3px;
+  border-color: rgb(126, 130, 218);
 }
-
+footer p{
+  color: rgb(200, 248, 249);
+  background-color: darkslateblue;
+  margin: 10px;
+}
 
 }

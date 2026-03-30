@@ -5,17 +5,49 @@
     <link rel="stylesheet" href="./styles/first.css">
 </head>
 
-<body id="light">
-<button onclick="document.body.id = 'dark';">
+<body id="Dark">
+<button id='#color-mode' onclick="changeColor()">
     Dark mode
 </button>
 
-<button onclick="document.body.id = 'light';">
-    Light mode
+   <button id='#kaito-yesorno' onclick="LikeOrNotK()">
+    Do you like Kaito
+</button> 
+
+<button id='#flins-yesorno' onclick="LikeOrNotF()">
+    Do you like Flins
 </button>
 
+<button id='#bachira-yesorno' onclick="LikeOrNotB()">
+    Do you like Bachira
+</button>
+
+<button id='#miku-yesorno' onclick="LikeOrNotM()">
+    Do you like Miku
+</button>
+
+<button id='#rui-yesorno' onclick="LikeOrNotR()">
+    Do you like Rui
+</button>
+
+
+
+
+
 <script>
-    
+  const colorModeButton = document.querySelector('#color-mode');
+
+  function changeColor(){
+    if(document.body.id === "Dark") {
+      console.log("turn on light");
+      document.body.id = 'Light';
+      colorModeButton.textContent = 'Dark mode';
+    }else{
+      console.log("turn of light")
+      document.body.id = 'Dark';
+      colorModeButton.textContent = 'Light mode';
+    }
+}
 </script>
 
     <h1>My first webpage</h1>
@@ -42,7 +74,7 @@
     <img src="/Images/kaito18.jpg" width="200">
     <img src="/Images/kaito19.jpg" width="200">
     <img src="/Images/kaito20.jpg" width="200">
-    <img src="/Images/kaito21.jpg" width="200">
+    <img src="/Images/kaito21.png" width="200">
     <img src="/Images/kaito22.jpg" width="200">
     <img src="/Images/flins.jpg" width="200">
     <img src="/Images/flins1.jpg" width="200">
@@ -118,7 +150,7 @@
     <img src="/Images/rui9.jpg" width="200">
     <img src="/Images/rui10.jpg" width="200">
     <img src="/Images/rui11.jpg" width="200">
-    
+
 
     <h5 class="ch">Those are my favorite characters, they are: Kaito, Miku, Rui from pjsk, Flins from Genshin Impact, Bchira from Blue Lock.💕</h5>
     <p class="piglet">Learn the skills to become a full-stack developer</p>
@@ -131,6 +163,68 @@
 
     <h3>Introduction to Javascript</h3>
     <p>Javascript adds interactivity to a webpage</p>
+
+
+
+<script>
+  const iLikeRuiBotton = document.querySelector('#rui-yesorno');
+
+  function LikeOrNotR(){
+    let Rui = prompt("Do you like Kamishiro Rui? ");
+    if(Rui==="yes"){
+            alert('I like it too!!' +(Image="/Images/kaito ok.jpg"));
+            
+        }else{
+            alert(Rui + "? Then who do you like" + '?');
+        }
+}
+const iLikeFlinsBotton = document.querySelector('#flins-yesorno');
+
+  function LikeOrNotF(){
+    let Flins = prompt("Do you like Flins? ");
+    if(Flins==="yes"){
+            alert('I like it too!!');
+            
+        }else{
+            alert(Flins + "? Then who do you like" + '?');
+        }
+    }
+
+    const iLikeKaitoBotton = document.querySelector('#kaito-yesorno');
+
+  function LikeOrNotK(){
+    let Kaito = prompt("Do you like Kaito? ");
+    if(Kaito==="yes"){
+            alert('I like it too!!');
+            
+        }else{
+            alert(Kaito + "? Then who do you like" + '?');
+        }
+    }
+
+        const iLikeBachiraBotton = document.querySelector('#bachira-yesorno');
+
+  function LikeOrNotB(){
+    let Bachira = prompt("Do you like Bachira? ");
+    if(Bachira==="yes"){
+            alert('I like it too!!');
+
+        }else{
+            alert(Bachira + "? Then who do you like" + '?');
+        }
+    }
+        const iLikeMikuBotton = document.querySelector('#miku-yesorno');
+
+  function LikeOrNotM(){
+    let Miku = prompt("Do you like Hatsune Miku? ");
+    if(Miku==="yes"){
+            alert('I like it too!!');
+            
+        }else{
+            alert(Miku + "? Then who do you like" + '?');
+        }
+    }
+</script>
 
     <script>
         let dog = {
@@ -147,38 +241,12 @@
         }
         console.log(family)
         family.pet.happy = true;
-        
-        let Rui = prompt("Do you like Kamishiro Rui?");
-        
-        
-        if(Rui==="yes"){
-            alert('I like it too!!');
-            
-        }else{
-            alert(Rui + "? Then who do you like" + '?');
-        }
-        
     </script>
+    
 <footer>
-    <p>mach 12 26, Emma</p>
+    <p>mach 12 26 
+    <p>Emma
 </footer>
 
 </body>
 
-// if(Flins==="yes"){
-            alert('you are a good people')
-        }
-        if(miku==="yes"){
-            alert('you are a good people')
-        }
-        if(kaito==="yes"){
-            alert('you are a good people')
-        }
-        if(Bachira==="yes"){
-            alert('you are a good people')
-        }
-
-        //let Flins = prompt("Do you like Flins?")
-        let miku = prompt("Do you like miku?")
-        let kaito = prompt("Do you like kaito?")
-        let Bachira = prompt("Do you like Bachira?")
